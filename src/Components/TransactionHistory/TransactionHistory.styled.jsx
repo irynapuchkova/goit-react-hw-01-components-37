@@ -10,7 +10,7 @@ export const Head = styled.thead`
   background-color: turquoise;
 `;
 export const Row = styled.tr`
-  &:nth-child(2n) {
+  &:nth-of-type(2n) {
     background-color: rgb(190, 240, 223);
   }
 `;

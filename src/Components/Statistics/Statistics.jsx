@@ -8,8 +8,6 @@ import {
 } from './Statistics.styled';
 
 export default function Statistics({ title, stats }) {
-  let lab = stats.map(stat => [stat.label]);
-  console.log(lab);
   return (
     <Section>
       {title && <Title>{title}</Title>}
