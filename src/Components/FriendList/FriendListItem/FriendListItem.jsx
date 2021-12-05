@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Item, Status, Avatar, Name } from './FriendListItem.styled';
 import { HiLockOpen, HiLockClosed } from 'react-icons/hi';
 
@@ -16,3 +17,9 @@ export default function FriendListItem({ avatar, name, status }) {
     </Item>
   );
 }
+
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  status: PropTypes.bool.isRequired,
+};
