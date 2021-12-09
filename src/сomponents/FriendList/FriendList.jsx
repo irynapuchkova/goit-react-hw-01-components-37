@@ -5,12 +5,12 @@ import { Friends } from './FriendList.styled';
 export default function FriendList({ friends }) {
   return (
     <Friends>
-      {friends.map(friend => (
+      {friends.map(({ id, avatar, name, isOnline }) => (
         <FriendListItem
-          key={friend.id}
-          avatar={friend.avatar}
-          name={friend.name}
-          status={friend.isOnline}
+          key={id}
+          avatar={avatar}
+          name={name}
+          status={isOnline}
         />
       ))}
     </Friends>

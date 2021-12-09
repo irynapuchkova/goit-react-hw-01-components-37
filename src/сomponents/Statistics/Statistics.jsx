@@ -14,10 +14,10 @@ export default function Statistics({ title, stats }) {
       {title && <Title>{title}</Title>}
 
       <StatsList>
-        {stats.map(stat => (
-          <StatsItem key={stat.id}>
-            <ItemLabel>{stat.label}</ItemLabel>
-            <ItemPercentage>{stat.percentage}</ItemPercentage>
+        {stats.map(({ id, label, percentage }) => (
+          <StatsItem key={id}>
+            <ItemLabel>{label}</ItemLabel>
+            <ItemPercentage>{percentage}</ItemPercentage>
           </StatsItem>
         ))}
       </StatsList>

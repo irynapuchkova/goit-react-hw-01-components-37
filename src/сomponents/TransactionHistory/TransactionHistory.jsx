@@ -1,7 +1,7 @@
 import PropTypes, { shape } from 'prop-types';
 import {
   Table,
-  Head,
+  TableHead,
   Row,
   HeadItem,
   Body,
@@ -11,13 +11,13 @@ import {
 export default function TransactionHistory({ items }) {
   return (
     <Table>
-      <Head>
+      <TableHead>
         <Row>
           <HeadItem>Type</HeadItem>
           <HeadItem>Amount</HeadItem>
           <HeadItem>Currency</HeadItem>
         </Row>
-      </Head>
+      </TableHead>
 
       <Body>
         {items.map(item => (

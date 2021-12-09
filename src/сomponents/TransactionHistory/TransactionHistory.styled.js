@@ -6,7 +6,7 @@ export const Table = styled.table`
 
   border-collapse: collapse;
 `;
-export const Head = styled.thead`
+export const TableHead = styled.thead`
   background-color: turquoise;
 `;
 export const Row = styled.tr`
@@ -17,6 +17,7 @@ export const Row = styled.tr`
 export const HeadItem = styled.th`
   padding: 10px;
   border: 1px solid #2a2a2a;
+  background-color: turquoise;
 `;
 export const Body = styled.tbody``;
 export const Data = styled.td`
